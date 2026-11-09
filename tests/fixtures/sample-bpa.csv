@@ -1,0 +1,24 @@
+code,type,subtype,importance,identifier,other,message,moreInfo,context
+ASO,system.info,\N,INFO,aem,\N,"AEM 6.5.21.0 (synthetic sample)",\N,\N
+CCOM,custom.core,\N,INFO,/apps/example/components/teaser,\N,"Custom component found",\N,\N
+CCOM,custom.core,\N,INFO,/apps/example/components/card,\N,"Custom component found",\N,\N
+CCOM,custom.foundation,\N,MAJOR,/apps/example/components/legacy-text,\N,"Custom component extends a Foundation component",\N,\N
+CCOM,custom.foundation,\N,MAJOR,/apps/example/components/legacy-image,\N,"Custom component extends a Foundation component",\N,\N
+CDW,classic.dialog.widget,\N,CRITICAL,/apps/example/widgets/colorpicker,\N,"Custom Classic UI dialog widget",\N,\N
+CDW,classic.dialog.widget,\N,MAJOR,/apps/example/widgets/tagpicker,\N,"Custom Classic UI dialog widget, used in 3 dialogs",\N,"{""dialogs"":3}"
+LUI,classic.dialog,\N,MAJOR,/apps/example/components/hero/dialog,\N,"Component uses a Classic UI dialog",\N,\N
+LUI,classic.dialog,\N,MAJOR,/apps/example/components/banner/dialog,\N,"Component uses a Classic UI dialog",\N,\N
+LUI,classic.dialog,\N,MAJOR,/apps/example/components/footer/dialog,\N,"Component uses a Classic UI dialog",\N,\N
+CTEM,static.template,\N,MAJOR,/apps/example/templates/article,\N,"Static template in use",\N,\N
+CTEM,static.template,\N,MAJOR,/apps/example/templates/landing,\N,"Static template in use",\N,\N
+URC,unsupported.runmode,\N,MAJOR,/apps/example/config.uat/com.example.ApiClient,\N,"Configuration uses a run mode not supported on Cloud Service",\N,\N
+REP,replication.agent,\N,MAJOR,/etc/replication/agents.author/publish2,\N,"Enabled replication agent",\N,\N
+WRK,custom.workflow,\N,CRITICAL,/var/workflow/models/dam/update_asset,\N,"Customised DAM Update Asset workflow",\N,\N
+OID,index.rule.violation,\N,MAJOR,/oak:index/exampleLucene,\N,"Custom Oak index does not follow naming conventions",\N,\N
+URS,unsupported.path,\N,MAJOR,/etc/example/settings,\N,"Content under /etc must move to /conf or /var",\N,\N
+DG,java.io.inputstream,\N,ADVISORY,com.example.core.AssetHelper,\N,"Binary streamed through java.io.InputStream",\N,\N
+OU,deprecated.api,\N,CRITICAL,com.example.core.LegacyJson,\N,"Bundle imports removed API org.apache.sling.commons.json",\N,\N
+ACV,missing.original.rendition,\N,ADVISORY,/content/dam/example/img-1.jpg,\N,"Asset is missing its original rendition",\N,\N
+ACV,missing.original.rendition,\N,ADVISORY,/content/dam/example/img-2.jpg,\N,"Asset is missing its original rendition",\N,\N
+PCX,large.node,\N,ADVISORY,/content/example/en/news,\N,"Node has more than 1,000 children",\N,\N
+XYZ,future.pattern,\N,ADVISORY,/apps/example/misc,\N,"A code this library does not know yet",\N,\N

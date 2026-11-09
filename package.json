@@ -1,0 +1,57 @@
+{
+  "name": "aem-bpa-parser",
+  "version": "0.1.0",
+  "description": "Parse Adobe AEM Best Practices Analyzer (BPA) CSV reports into findings, categories and an effort range. TypeScript, zero dependencies.",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "author": "Surge Software Solutions Pvt Ltd",
+  "homepage": "https://github.com/SurgeEnterpriseAI/aem-bpa-parser#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SurgeEnterpriseAI/aem-bpa-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SurgeEnterpriseAI/aem-bpa-parser/issues"
+  },
+  "keywords": [
+    "aem",
+    "adobe-experience-manager",
+    "aem-cloud-service",
+    "best-practices-analyzer",
+    "bpa",
+    "migration",
+    "csv"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "aem-bpa-parser": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --maxWorkers=1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
