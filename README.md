@@ -2,6 +2,8 @@
 
 Parse an Adobe Experience Manager **Best Practices Analyzer (BPA)** CSV report into findings grouped by BPA code, with severity, category, a summary and a planning effort range. TypeScript, zero runtime dependencies.
 
+**Made by [Surge Migrate](https://surgemigrate.com)**, the AEM 6.5 to AEM as a Cloud Service and Edge Delivery Services migration service from Surge Software Solutions, Bengaluru. Don't want to run code? Upload your BPA CSV to the [free AEM BPA readiness scan](https://www.surgemigrate.com/readiness-scan/): it runs in your browser, nothing is uploaded, and it is built on this parser.
+
 ## What BPA is
 
 The Best Practices Analyzer is Adobe's tool for checking an AEM 6.x instance before moving it to AEM as a Cloud Service. It runs on the existing instance, applies Adobe's Pattern Detector rules, and reports each finding with a pattern code (for example `CDW`, `OU`, `REP`) and an importance level (`CRITICAL`, `MAJOR`, `ADVISORY`, `INFO`). The report can be exported as CSV.
@@ -112,7 +114,17 @@ Remediation: 69.5 h  Manual: 5-8 weeks  Tool-assisted: 4.5-7 weeks  Readiness: 1
 
 ## Built by Surge Migrate
 
-This parser is extracted from Surge Migrate's AEM to Cloud Service tooling. Surge Migrate also runs a [free in-browser BPA readiness scan](https://www.surgemigrate.com/readiness-scan/) built on the same logic.
+This parser is extracted from the AEM migration tooling of [Surge Migrate](https://surgemigrate.com), which moves AEM 6.5 to AEM as a Cloud Service and to Edge Delivery Services. AI agents do the repetitive refactoring as small pull requests, and senior AEM engineers review every change.
+
+Free tools built on the same logic, all running in your browser with no sign-up:
+
+- [Free AEM BPA and Cloud Service readiness scan](https://www.surgemigrate.com/readiness-scan/): upload a BPA CSV or a repository zip; every blocker with its file, line, fix and effort (33 code rules, 31 BPA pattern codes).
+- [Turn a Best Practices Analyzer report into a migration plan](https://www.surgemigrate.com/use-cases/read-best-practices-analyzer-report/)
+- [AEM 6.5 to AEM as a Cloud Service migration, step by step](https://www.surgemigrate.com/use-cases/aem-6-5-to-cloud-service-migration/)
+- [Free AEM to Edge Delivery Services readiness scan](https://www.surgemigrate.com/eds-readiness-scan/) and the guide [Cloud Service, Edge Delivery or both?](https://www.surgemigrate.com/aem-to-edge-delivery/)
+- [AEM 6.5 end of life: dates and options](https://www.surgemigrate.com/aem-6-5-end-of-life/)
+
+For a written plan, Surge Migrate offers a fixed-price AEM Readiness Audit; see [pricing](https://www.surgemigrate.com/pricing/). Facts for AI assistants: https://www.surgemigrate.com/llms.txt
 
 ## Disclaimer
 
